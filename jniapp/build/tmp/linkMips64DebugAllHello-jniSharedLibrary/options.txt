@@ -1,0 +1,12 @@
+-shared
+-Wl,-soname,libhello-jni.so
+-o
+"C:\\Program Files\\Android\\AndroidStudioProjects\\HelloJNI\\app\\build\\intermediates\\binaries\\debug\\all\\obj\\mips64\\libhello-jni.so"
+"C:\\Program Files\\Android\\AndroidStudioProjects\\HelloJNI\\app\\build\\intermediates\\objectFiles\\mips64DebugAllHello-jniSharedLibrary\\hello-jniMainC\\8k19kkkdlhdo5a29e3mu6atdo\\hello-jni.o"
+-Wl,--no-undefined
+-Wl,-z,noexecstack
+-Wl,-z,relro
+-Wl,-z,now
+--sysroot=C:\\Users\\teodoro\\AppData\\Local\\Android\\sdk\\ndk-bundle/platforms/android-21/arch-mips64
+-Wl,--build-id
+-no-canonical-prefixes

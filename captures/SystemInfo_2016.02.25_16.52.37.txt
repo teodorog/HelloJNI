@@ -1,0 +1,31 @@
+Activity Resolver Table:
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        2d667ad0 com.example.hellojni/.HelloJni filter 2d628e38
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+
+Key Set Manager:
+  [com.example.hellojni]
+      Signing KeySets: 2
+
+Packages:
+  Package [com.example.hellojni] (2d8650a0):
+    userId=10110 gids=[]
+    pkg=Package{2d6b7010 com.example.hellojni}
+    codePath=/data/app/com.example.hellojni-2.apk
+    resourcePath=/data/app/com.example.hellojni-2.apk
+    nativeLibraryPath=/data/app-lib/com.example.hellojni-2
+    versionCode=1 targetSdk=23
+    versionName=1.0
+    applicationInfo=ApplicationInfo{2d6b5e40 com.example.hellojni}
+    flags=[ DEBUGGABLE HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    dataDir=/data/data/com.example.hellojni
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    timeStamp=2016-02-25 16:51:16
+    firstInstallTime=2016-02-25 11:31:00
+    lastUpdateTime=2016-02-25 16:51:17
+    signatures=PackageSignatures{2d4a10f0 [2d61c090]}
+    permissionsFixed=true haveGids=true installStatus=1
+    pkgFlags=[ DEBUGGABLE HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    User 0:  installed=true blocked=false stopped=false notLaunched=false enabled=0

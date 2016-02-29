@@ -1,0 +1,4 @@
+See file:///C:/Program%20Files/Android/AndroidStudioProjects/HelloJNI/app/build/tmp/compileArmeabiDebugAllHello-jniSharedLibraryHello-jniMainC/output.txt for all output for compileArmeabiDebugAllHello-jniSharedLibraryHello-jniMainC.
+compiling hello-jni.c successful.
+
+Finished compileArmeabiDebugAllHello-jniSharedLibraryHello-jniMainC, see full log file:///C:/Program%20Files/Android/AndroidStudioProjects/HelloJNI/app/build/tmp/compileArmeabiDebugAllHello-jniSharedLibraryHello-jniMainC/output.txt.
