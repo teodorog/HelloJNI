@@ -1,4 +1,4 @@
-See file:///C:/Program%20Files/Android/AndroidStudioProjects/HelloJNI/app/build/tmp/linkArm64-v8aDebugAllHello-jniSharedLibrary/output.txt for all output for linkArm64-v8aDebugAllHello-jniSharedLibrary.
+See file:///C:/Program%20Files/Android/AndroidStudioProjects/HelloJNI/jniapp/build/tmp/linkArm64-v8aDebugAllHello-jniSharedLibrary/output.txt for all output for linkArm64-v8aDebugAllHello-jniSharedLibrary.
 linking libhello-jni.so successful.
 
-Finished linkArm64-v8aDebugAllHello-jniSharedLibrary, see full log file:///C:/Program%20Files/Android/AndroidStudioProjects/HelloJNI/app/build/tmp/linkArm64-v8aDebugAllHello-jniSharedLibrary/output.txt.
+Finished linkArm64-v8aDebugAllHello-jniSharedLibrary, see full log file:///C:/Program%20Files/Android/AndroidStudioProjects/HelloJNI/jniapp/build/tmp/linkArm64-v8aDebugAllHello-jniSharedLibrary/output.txt.

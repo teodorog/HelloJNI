@@ -1,4 +1,7 @@
-See file:///C:/Program%20Files/Android/AndroidStudioProjects/HelloJNI/app/build/tmp/linkArmeabi-v7aDebugAllHello-jniSharedLibrary/output.txt for all output for linkArmeabi-v7aDebugAllHello-jniSharedLibrary.
-linking libhello-jni.so successful.
+See file:///C:/Program%20Files/Android/AndroidStudioProjects/HelloJNI/jniapp/build/tmp/linkArmeabi-v7aDebugAllHello-jniSharedLibrary/output.txt for all output for linkArmeabi-v7aDebugAllHello-jniSharedLibrary.
+linking libhello-jni.so failed.
+C:/Users/teodoro/AppData/Local/Android/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.9/../../../../arm-linux-androideabi/bin/ld.exe: error: C:\Program Files\Android\AndroidStudioProjects\HelloJNI\jniapp\build\intermediates\objectFiles\armeabi-v7aDebugAllHello-jniSharedLibrary\hello-jniMainC\bqomn2lgqu5gop4lulhxjvdqc\hello-jni.o: multiple definition of 'Java_com_example_hellojni_HelloJni_stringFromJNI'
+C:/Users/teodoro/AppData/Local/Android/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.9/../../../../arm-linux-androideabi/bin/ld.exe: C:\Program Files\Android\AndroidStudioProjects\HelloJNI\jniapp\build\intermediates\objectFiles\armeabi-v7aDebugAllHello-jniSharedLibrary\hello-jniMainC\8k19kkkdlhdo5a29e3mu6atdo\hello-jni.o: previous definition here
+collect2.exe: error: ld returned 1 exit status
 
-Finished linkArmeabi-v7aDebugAllHello-jniSharedLibrary, see full log file:///C:/Program%20Files/Android/AndroidStudioProjects/HelloJNI/app/build/tmp/linkArmeabi-v7aDebugAllHello-jniSharedLibrary/output.txt.
+Finished linkArmeabi-v7aDebugAllHello-jniSharedLibrary, see full log file:///C:/Program%20Files/Android/AndroidStudioProjects/HelloJNI/jniapp/build/tmp/linkArmeabi-v7aDebugAllHello-jniSharedLibrary/output.txt.

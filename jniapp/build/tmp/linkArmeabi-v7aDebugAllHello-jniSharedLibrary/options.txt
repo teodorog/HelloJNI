@@ -1,8 +1,9 @@
 -shared
 -Wl,-soname,libhello-jni.so
 -o
-"C:\\Program Files\\Android\\AndroidStudioProjects\\HelloJNI\\app\\build\\intermediates\\binaries\\debug\\all\\obj\\armeabi-v7a\\libhello-jni.so"
-"C:\\Program Files\\Android\\AndroidStudioProjects\\HelloJNI\\app\\build\\intermediates\\objectFiles\\armeabi-v7aDebugAllHello-jniSharedLibrary\\hello-jniMainC\\8k19kkkdlhdo5a29e3mu6atdo\\hello-jni.o"
+"C:\\Program Files\\Android\\AndroidStudioProjects\\HelloJNI\\jniapp\\build\\intermediates\\binaries\\debug\\all\\obj\\armeabi-v7a\\libhello-jni.so"
+"C:\\Program Files\\Android\\AndroidStudioProjects\\HelloJNI\\jniapp\\build\\intermediates\\objectFiles\\armeabi-v7aDebugAllHello-jniSharedLibrary\\hello-jniMainC\\8k19kkkdlhdo5a29e3mu6atdo\\hello-jni.o"
+"C:\\Program Files\\Android\\AndroidStudioProjects\\HelloJNI\\jniapp\\build\\intermediates\\objectFiles\\armeabi-v7aDebugAllHello-jniSharedLibrary\\hello-jniMainC\\bqomn2lgqu5gop4lulhxjvdqc\\hello-jni.o"
 -Wl,--no-undefined
 -Wl,-z,noexecstack
 -Wl,-z,relro
