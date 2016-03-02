@@ -17,10 +17,15 @@ package com.example.hellojni;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.Matrix;
 import android.net.Uri;
 import android.os.Environment;
 import android.provider.MediaStore;
 import android.util.Log;
+import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.os.Bundle;
 import android.widget.Toast;
@@ -79,20 +84,20 @@ public class HelloJni extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        /* Crea una TextView e setta il suo contenuto.
-         * il testo è recuperato chiamando una funzione nativa.
+        /*  il testo è recuperato chiamando una funzione nativa.
          */
-        TextView tv = new TextView(this);
-        tv.setText(stringFromJNI());
-        setContentView(tv);
+        setContentView(R.layout.main_layout);
+        TextView mTextView = (TextView) findViewById(R.id.jniTextView);
+        final String myStringa = stringFromJNI();
+        mTextView.setText(myStringa);
 
         // crea un Intent perottenre un' immagine
-        Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+        /*Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
 
         fileUri = getOutputMediaFileUri(); // crea un file per salvarel' immagine
         intent.putExtra(MediaStore.EXTRA_OUTPUT, fileUri); // set il nome del file immagine
 
-        startActivityForResult(intent, CAPTURE_IMAGE_ACTIVITY_REQUEST_CODE);
+        startActivityForResult(intent, CAPTURE_IMAGE_ACTIVITY_REQUEST_CODE);*/
     }
 
     @Override
@@ -101,12 +106,27 @@ public class HelloJni extends Activity {
             if (resultCode == RESULT_OK) {
                 // immagine catturata e salvata nel fileUri specificato dall' Intent
                 Toast.makeText(this, "immagine salvata in\n" + myfile.toString(), Toast.LENGTH_LONG).show();
+                ImageView mImageView = (ImageView) findViewById(R.id.voltoView);
+                Bitmap mBitmap = BitmapFactory.decodeFile(fileUri.getEncodedPath());
+                Bitmap rBitmap = rotateBitmap(mBitmap, 270);
+                mImageView.setImageBitmap(rBitmap);
             } else if (resultCode == RESULT_CANCELED) {
-                // l' utente ha cancellato l' immagine catturata
+                Toast.makeText(this, "immagine cancellata dall' utente\n", Toast.LENGTH_LONG).show();
             } else {
-                // cattura dell' immagine fallita
+                Toast.makeText(this, "acquisizione immagine fallita\n", Toast.LENGTH_LONG).show();
             }
         }
+    }
+
+    public void parteCamera(View cameraButton) {
+
+        Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+
+        fileUri = getOutputMediaFileUri(); // crea un file per salvarel' immagine
+        intent.putExtra(MediaStore.EXTRA_OUTPUT, fileUri); // set il nome del file immagine
+
+        startActivityForResult(intent, CAPTURE_IMAGE_ACTIVITY_REQUEST_CODE);
+
     }
 
 
@@ -130,5 +150,16 @@ public class HelloJni extends Activity {
      */
     static {
         System.loadLibrary("hello-jni");
+    }
+
+
+    public static Bitmap rotateBitmap(Bitmap bmOrg, float degree) {
+        Matrix matrix = new Matrix();
+        matrix.postRotate(degree);
+
+        float newHeight = bmOrg.getHeight();
+        float newWidth = bmOrg.getWidth() / 100 * (100.0f / bmOrg.getHeight() * newHeight);
+
+        return Bitmap.createBitmap(bmOrg, 0, 0, (int) newWidth, (int) newHeight, matrix, true);
     }
 }
